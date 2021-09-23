@@ -28,9 +28,9 @@ subdir = None
 if "lab-" in identifier:
     print("Auto-detected that this is a lab")
     subdir="labs"
-elif "chapter-" in identifier:
-    print("Auto-detected that this is a chapter")
-    subdir="chapters"
+elif "topic-" in identifier:
+    print("Auto-detected that this is a topic")
+    subdir="topics"
 elif "tutorial-" in identifier:
     print("Auto-detected that this is a tutorial")
     subdir="tutorials"
@@ -57,5 +57,5 @@ if subdir is not None:
         print("Command failed:",cmd)
         exit(1)
 
-    print('You now have your chapter/assignment/lab')
+    print('You now have your topic/assignment/lab')
 
