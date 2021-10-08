@@ -38,11 +38,7 @@ else:
     print("Auto-detected that this is an assignment")
     subdir="assignments"
 
-if subdir != "assignments":
-    name = "".join([c[0].upper()+c[1:] for c in identifier.split("-")])
-else:
-    name = identifier.split("-")[0]
-    name = name[0].upper()+name[1:]
+name = "".join([c[0].upper()+c[1:] for c in identifier.split("-")])
 print("Name:",name)
 
 if subdir is not None:
